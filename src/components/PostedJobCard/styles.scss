@@ -1,0 +1,26 @@
+.job-post-card {
+    > h4 {
+      font: normal normal normal 17px/20px Helvetica Neue;
+      color: #303f60;
+    }
+    > p {
+      font: normal normal normal 14px/16px Helvetica Neue;
+      color: #303f60;
+    }
+    > .job-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > div {
+        font: normal normal normal 14px/16px Helvetica Neue;
+        color: #303f60;
+        max-width: 97px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        > img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }

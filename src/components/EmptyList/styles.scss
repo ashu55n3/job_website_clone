@@ -1,0 +1,13 @@
+.empty-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > img {
+      width: 106px;
+    }
+    > p {
+      font: normal normal normal 20px/24px Helvetica Neue;
+      color: #303f60;
+      margin-top: 18px;
+    }
+  }

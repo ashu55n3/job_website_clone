@@ -1,0 +1,19 @@
+.default-layout {
+  background: linear-gradient(
+    to bottom,
+    #303f60 0%,
+    #1A253C 40%,
+    #EDF6FF 40%,
+    #EDF6FF 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .default-layout-section {
+    max-width: 1084px;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+  }
+}

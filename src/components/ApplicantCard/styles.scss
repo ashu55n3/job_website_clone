@@ -1,0 +1,45 @@
+.applicant-card {
+    padding: 14px;
+    border: 1px solid rgba(48, 63, 96, 0.5);
+    .applicant-card-avatar {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(217, 239, 255, 1);
+        border-radius: 25px;
+        margin-right: 20px;
+    }
+    .applicant-contact-details {
+        :first-child {
+            font: normal normal normal 15px/18px Helvetica Neue;
+            color: #303f60;
+            margin-bottom: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        :last-child {
+            font: normal normal normal 15px/17px Helvetica Neue;
+            color: #303f60;
+            opacity: 0.8;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    :last-child {
+        >label {
+            font: normal normal normal 13px/16px Helvetica Neue;
+            color: #303f60;
+        }
+       > p {
+            font: normal normal normal 15px/18px Helvetica Neue;
+            color: #303f60;
+            opacity: 0.8;
+            margin-bottom: unset;
+        }
+    }
+    
+}

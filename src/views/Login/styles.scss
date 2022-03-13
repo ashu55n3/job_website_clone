@@ -1,0 +1,41 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  > .login-modal {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    min-width: 560px;
+    > h1 {
+      font: normal normal normal 22px/27px Helvetica Neue;
+      color: #303f60;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      .form-group {
+        margin-top: 20px;
+        > label {
+          margin-bottom: 8px;
+        }
+      }
+      > button {
+        margin-top: 40px;
+        width: fit-content;
+        align-self: center;
+      }
+    }
+    > .signup-link {
+      font: normal normal normal 16px/19px Helvetica Neue;
+      color: #303f60;
+      text-align: center;
+      margin-top: 53px;
+      > a {
+        text-decoration: none;
+        color: #43afff;
+      }
+    }
+  }
+}
