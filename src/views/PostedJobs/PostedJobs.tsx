@@ -99,19 +99,6 @@ function PostedJobs() {
                 key={job.id}
               />
             ))}
-            {totalPageArray.length && (
-              <Pagination>
-                {totalPageArray.map((pageNo) => (
-                  <PageItem
-                    active={pageNo === page}
-                    onClick={() => setPage(pageNo)}
-                    key={pageNo}
-                  >
-                    {pageNo}
-                  </PageItem>
-                ))}
-              </Pagination>
-            )}
           </>
         ) : (
           <EmptyList
@@ -120,6 +107,21 @@ function PostedJobs() {
           />
         )}
       </div>
+      {Boolean(
+        totalPageArray.length && Array.isArray(jobData) && jobData.length
+      ) && (
+        <Pagination className="align-self-center">
+          {totalPageArray.map((pageNo) => (
+            <PageItem
+              active={pageNo === page}
+              onClick={() => setPage(pageNo)}
+              key={pageNo}
+            >
+              {pageNo}
+            </PageItem>
+          ))}
+        </Pagination>
+      )}
     </div>
   );
 }

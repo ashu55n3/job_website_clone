@@ -7,5 +7,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid grey;
+    > .right-section {
+      display: flex;
+      gap: 10px;
+      color: white;
+      align-items: center;
+    }
   }
 }

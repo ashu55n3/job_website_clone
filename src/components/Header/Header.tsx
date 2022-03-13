@@ -15,6 +15,8 @@ function Header() {
       return null;
     } else if (getAuthToken() && getUsername()) {
       return (
+        <>
+        <span>Welcome {getUsername()} !</span>
         <button
           className="btn btn-outline-primary btn-padding"
           onClick={() => {
@@ -24,6 +26,7 @@ function Header() {
         >
           Logout
         </button>
+        </>
       );
     } else {
       return (
